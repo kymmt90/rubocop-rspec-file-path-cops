@@ -1,0 +1,8 @@
+require: rubocop-rspec
+
+AllCops:
+  DisabledByDefault: true
+
+RSpec/FilePath:
+  Enabled: true
+  SpecSuffixOnly: true
