@@ -1,8 +1,13 @@
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - './lib/custom_cops/spec_suffix'
+  - './lib/custom_cops/consistent_file_path'
 
 AllCops:
   DisabledByDefault: true
 
-RSpec/FilePath:
+CustomCops/SpecSuffix:
   Enabled: true
-  SpecSuffixOnly: true
+
+CustomCops/ConsistentFilePath:
+  Enabled: true

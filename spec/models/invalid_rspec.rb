@@ -1,5 +1,7 @@
-RSpec.describe 'invalid file name' do
+class Invalid; end
+
+RSpec.describe Invalid do
   it 'is valid' do
-    expect(true).to eq true
+    expect(true).to be
   end
 end
